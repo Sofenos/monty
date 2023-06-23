@@ -24,7 +24,7 @@ void pall(stack_t **stack, unsigned int ln_n)
  * pint - Prints the value at the top of the stack
  * @stack: Pointer to the top of the stack
  * @ln_n: Line number associated with the operation
- *
+ * 
  * Return: void
  */
 void pint(stack_t **stack, unsigned int ln_n)

@@ -30,8 +30,7 @@ void mul(stack_t **stack, unsigned int ln_n)
 }
 
 /**
- * mod - Computes the modulus of the second element by the top elementi
- *of the stack
+ * mod - Computes the modulus of the second element by the top element of the stack
  * @stack: Pointer to the top of the stack
  * @ln_n: Line number associated with the operation
  *

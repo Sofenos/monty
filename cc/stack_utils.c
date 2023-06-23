@@ -4,7 +4,7 @@
  * oper_push - Push an integer onto a stack
  * @stack: Pointer to the stack
  * @ln_n: Line number
- *
+ * 
  * Return: None
  */
 void oper_push(stack_t **stack, unsigned int ln_n)
@@ -47,7 +47,7 @@ void oper_push(stack_t **stack, unsigned int ln_n)
  * oper_pall - Print all elements in the stack
  * @stack: Pointer to the stack
  * @ln_n: Line number
- *
+ * 
  * Return: None
  */
 void oper_pall(stack_t **stack, unsigned int ln_n)
@@ -66,7 +66,7 @@ void oper_pall(stack_t **stack, unsigned int ln_n)
  * oper_pint - Print the top element of the stack
  * @stack: Pointer to the stack
  * @ln_n: Line number
- *
+ * 
  * Return: None
  */
 void oper_pint(stack_t **stack, unsigned int ln_n)

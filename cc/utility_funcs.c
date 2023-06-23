@@ -3,8 +3,7 @@
 #define DELIM " \t\r\n\a"
 
 /**
- * txt_toarr - Read lines from a file and store them in an array of
- *             line_t structs
+ * txt_toarr - Read lines from a file and store them in an array of line_t structs
  * @nameoffile: Name of the file to read
  *
  * Return: Pointer to the array of line_t structs on success, NULL on failure
@@ -57,7 +56,7 @@ line_t *txt_toarr(const char *nameoffile)
  */
 char **splt_ln(char *parsed_line)
 {
-	char **tkns = NULL, **temporary = NULL, *tkn = strtok(parsed_line, DELIM);
+	char **tkns = NULL, **temporary = NULL, *tkn = strtok(parsed_line, DELIM);;
 	int pos = 0;
 
 	while (tkn != NULL)
@@ -115,7 +114,7 @@ int _atoi(char *str, int *num)
 /**
  * op_function - Get the function corresponding to an opcode
  * @str: Opcode string
- *
+ * 
  * Return: Function pointer corresponding to the opcode, or NULL if not found
  */
 void (*op_function(char *str))(stack_t**, unsigned int)
@@ -141,11 +140,9 @@ void (*op_function(char *str))(stack_t**, unsigned int)
  *
  * Return: None
  */
-void mt_err(monty_t *mt)
-{
-	switch (mt->error)
-	{
-		case MONTY_ERROR_INVALID_OPCODE:
+void mt_err(monty_t *mt){
+  switch (mt->error) {
+  case MONTY_ERROR_INVALID_OPCODE:
 			printf("L%d: unknow instruction %s\n", mt->line, mt->token);
 			break;
 		case MONTY_ERROR_PUSH_MISSING_ARG:
@@ -154,11 +151,11 @@ void mt_err(monty_t *mt)
 			break;
 		case MONTY_ERROR_POP_EMPTY:
 			printf("L%d: can't pop an empty stack\n", mt->line);
-			break;
+			break;		
 		case MONTY_ERROR_PINT_EMPTY:
 			printf("L%d: can't %s, stack empty\n", mt->line, mt->token);
 			break;
-		default:
+default:
 			printf("L%d: unknown error\n", mt->line);
 	}
 }

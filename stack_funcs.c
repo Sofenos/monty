@@ -18,7 +18,7 @@ void nop(stack_t **stack, unsigned int ln_n)
  * pop - Removes the top element of the stack
  * @stack: Double pointer to the top of the stack
  * @ln_n: Line number where the operation occurs
- *
+ * 
  * Return: void
  */
 void pop(stack_t **stack, unsigned int ln_n)
@@ -87,8 +87,8 @@ void push(stack_t **stack, unsigned int ln_n, char *tmp)
 
 /**
  * free_stack - Frees a stack
- * @stack: Pointer to the top of the stacki
- *
+ * @stack: Pointer to the top of the stack
+ * 
  * Return: void
  */
 void free_stack(stack_t *stack)
@@ -104,7 +104,7 @@ void free_stack(stack_t *stack)
  * swap - Swaps the top two elements of the stack
  * @stack: Double pointer to the top of the stack
  * @ln_n: Line number where the operation occurs
- *
+ * 
  * Return: void
  */
 void swap(stack_t **stack, unsigned int ln_n)

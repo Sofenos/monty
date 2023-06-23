@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - Checks if a string represents a valid positive integer
- * @s: Pointer to the string to be checked
+ * @str: Pointer to the string to be checked
  *
  * Return: 0 if the string represents a valid positive integer, 1 otherwise
  */
